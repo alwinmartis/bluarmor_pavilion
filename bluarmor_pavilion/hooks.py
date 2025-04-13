@@ -5,6 +5,8 @@ app_description = "Bluarmor official frappe app"
 app_email = "alwinmartis20@gmail.com"
 app_license = "agpl-3.0"
 
+export_python_type_annotations = True
+
 # Apps
 # ------------------
 
@@ -237,3 +239,5 @@ app_license = "agpl-3.0"
 # 	"Logging DocType Name": 30  # days to retain logs
 # }
 
+
+website_route_rules = [{'from_route': '/frontend/<path:app_path>', 'to_route': 'frontend'},]
